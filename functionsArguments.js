@@ -22,5 +22,11 @@ function isSnakeEyes(a, b) {
     }
 }
 isSnakeEyes(1,1);
+
+//Use return instead
+function multiply (x,y) {
+    return x * y;
+}
+multiply(2,3);
 </script>
 
