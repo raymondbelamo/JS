@@ -46,5 +46,10 @@ function lastElement(arr) {
 console.log(lastElement([3, 5, 7])); 
 console.log(lastElement([1]));
 console.log(lastElement([])); 
+
+//Capitalize function
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 </script>
 
