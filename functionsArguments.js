@@ -28,5 +28,14 @@ function multiply (x,y) {
     return x * y;
 }
 multiply(2,3);
+
+//Another function
+function isShortsWeather (temperature) {
+    if (temperature < 75) {
+        return false;
+    } else {
+        return true;
+    }
+}
 </script>
 
