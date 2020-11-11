@@ -51,5 +51,14 @@ console.log(lastElement([]));
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
+//Add nums in Array function
+function sumArray(arr) {
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum;
+}
 </script>
 
