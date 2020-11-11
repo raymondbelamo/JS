@@ -60,5 +60,15 @@ function sumArray(arr) {
     }
     return sum;
 }
+
+//Days Of The Week Exercise
+function returnDay (dayNumber) {
+    if (dayNumber < 1 || dayNumber > 7) {
+        return null;
+    }
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    let dayName = days[dayNumber - 1];
+    return dayName;
+}
 </script>
 
