@@ -1,0 +1,11 @@
+<script>
+//Function
+function add(x,y) {
+  return x + y;
+}
+
+//Storing as variables
+const add = function (x,y) {
+  return x + y;
+}
+</script>
