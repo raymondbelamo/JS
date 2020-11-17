@@ -1,0 +1,37 @@
+<script>
+//Function Scope
+let fruit = 'Orange';
+
+function pickFruit() {
+  let fruit = 'Apple';
+  fruit; //'Apple'
+}
+
+fruit; //'Orange'
+
+//Block Scope
+let radius = 8;
+
+if(radius > 0){
+  const PI = 3.14;
+  let circumference = 2 * PI * radius
+}
+
+console.log(radius); //8
+console.log(PI); //NOT DEFINED
+console.log(circumference); //NOT DEFINED
+
+//Lexical Scope
+function bankRobbery() {
+const heroes = ['Spiderman', 'Wolverine', 'Black Panther', 'Superman', 'Antman']
+  function cryForHelp() {
+    function help() {
+      for (let hero of heroes) {
+        console.log(`PLEASE HELP US ${hero.toUpperCase}`);
+      }
+    }
+    help();
+  }
+  cryForHelp();
+}
+</script>
