@@ -1,0 +1,17 @@
+<script>
+  try {
+    hello.toUpperCase(); //error since hello is not defined
+  } catch {
+    //catch error and do this
+    console.log("ERROR!!");
+    }
+    
+  //Another error
+  function yell(msg) {
+    try{
+      console.log(msg.toUpperCase().repeat(3));
+    } catch (e) {
+      console.log("Please pass a string!");
+    }
+  }
+</script>
