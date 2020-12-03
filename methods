@@ -1,10 +1,19 @@
 <script>
-//We create our methods which we can easily call
   let square = {
     area : function (x) {
         return x * x;
     },
     perimeter : function (x) {
+        return x * 4;
+    }
+};
+
+//Alternatively, using shorter syntax
+  let square = {
+    area(x) {
+        return x * x;
+    },
+    perimeter(x) {
         return x * 4;
     }
 };
@@ -16,4 +25,20 @@
 };
 
 //square.area(10) should return 100
+
+//Keyword "this"(Egg Laying Exercise) 
+  let hen = {
+    name: 'Helen',
+    eggCount: 0,
+    layAnEgg() {
+        this.eggCount++;
+        return 'EGG';
+    }
+};
+
+/* hen.name returns 'Helen'
+   hen.eggCount returns 0
+   hen.layAnEgg() returns 'EGG'
+   hen.layAnEgg() returns 'EGG'
+   hen.eggCount returns 2 */
 </script>
