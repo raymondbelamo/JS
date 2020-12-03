@@ -1,0 +1,19 @@
+<script>
+//We create our methods which we can easily call
+  let square = {
+    area : function (x) {
+        return x * x;
+    },
+    perimeter : function (x) {
+        return x * 4;
+    }
+};
+
+//Using arrow functions
+  let square = {
+    area : (x) => { return x * x; },
+    perimeter : (x) => { return x * 4; }
+};
+
+//square.area(10) should return 100
+</script>
