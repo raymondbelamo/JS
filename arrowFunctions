@@ -1,0 +1,37 @@
+//Regular Function Expression
+const isEven = function (num) {
+  return num % 2 === 0;
+}
+
+//Arrow Function
+const isEven = (num) => {
+  return num % 2 === 0;
+}
+
+//Arrow Function with no brackets around arguments
+const isEven = num => {
+  return num % 2 === 0;
+} //This works only if its a single arg
+
+//Implicit returns
+const isEven = num => (
+  num % 2 === 0;
+);
+
+//One liner
+const isEven = num => num % 2 === 0;
+
+//Exercise: This function returns a greeting string
+function greet (name, salute = "Hey There") {
+    console.log(`${salute} ${name}!`);
+}
+greet("Ray", "What's up")
+ 
+// Output: What's up Ray!
+
+//Using arrow functions for the exercise
+
+const greet = (name, salute = "Hey There") => `${salute} ${name}!`;
+//greet("Ray")
+
+// Output: Hey There Ray!
