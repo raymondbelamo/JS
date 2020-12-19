@@ -1,0 +1,13 @@
+//filter method makes a subset of elements that passes specified test in a new array
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const evenNums = nums.filter(n => n % 2 === 0); // for every true value of n, n is added to evenNums array
+
+console.log(evenNums)
+//result: [2, 4, 6, 8]
+
+
+//Exercise: This function accepts an array of usernames and returns a new array of usernames with less than 10 characters
+function validUserNames(user) {
+    return user.filter(name => name.length < 10);
+}
