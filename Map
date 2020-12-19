@@ -1,0 +1,15 @@
+<script>
+  function cleanNames(name){
+    return name.map(function(names){
+        return names.trim();
+    });
+}
+
+//Using Arrow Functions
+  function cleanNames(name){
+    return name.map(names => names.trim());
+}
+
+//cleanNames([" timothee", "  darth_hater", "sassyfrassy  ", " elton john  "]);
+// => ["timothee", "darth_hater", "sassyfrassy", "elton john"]
+</script>
