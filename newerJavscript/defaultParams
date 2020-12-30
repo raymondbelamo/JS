@@ -1,0 +1,14 @@
+//default parameters sets default values to function paramters when no value is passed
+
+//previous method of setting default values
+function multiply (a, b) {
+  b = typeof b !== 'undefined' ? b : 1 ;
+  return a * b;
+};
+multiply (3); //3
+multiply (3, 5); //15
+
+//Using default params
+const multiply = (a, b = 1) => a * b;
+multiply (3); //3
+multiply (3, 5); //15
