@@ -1,0 +1,32 @@
+//Spread expands an iterable(string, array, object) into a list of arguments
+
+//Spread in an array
+const evens = [2, 4, 6, 8];
+Math.max(evens); //NaN
+Math.max(...evens); //8
+//same as Math.max(2, 4, 6, 8);
+
+//Spread in array
+const boys = ['Vince', 'James', 'Raymond', 'Austin'];
+const girls = ['Denise', 'Ella'];
+const allStudents = [...boys, ...girls]
+
+//Spread in object literals
+const user1 = {
+  id: 1,
+  name: 'Raymond',
+  gender: 'Male' 
+};
+const user2 = {
+  id: 2,
+  name: 'Denise',
+  gender: 'Female' 
+};
+
+const student = {...user1, isStudent : true};
+/* student = {
+  gender: "Male"
+  id: 1
+  isStudent: true
+  name: "Raymond"
+}; */
