@@ -1,0 +1,30 @@
+//Some returns true if ANY of the array elements pass the provided test function and returns a boolean.
+
+const randomWords = ['jeff', 'hello', 'pot', 'candy', 'door', 'buy'];
+
+//Use some to check if there are any words longer than 4 characters
+words.some(word => word.length > 4);
+//result : true
+
+//Use some to check if words start with 'a'
+words.some(word => word[0] === 'a');
+//result : false
+
+//Do any words include 'can'?
+words.some(word => word.includes('can'));
+//result : true
+
+//Every tests whether all elements in the array pass the provided test function and returns a boolean.
+
+const randomWords = ['clog', 'blog', 'bing', 'ring', 'long'];
+
+//Use every to check if all words are 4 characters
+words.every(word => word.length === 4);
+//result : true
+
+//Use every 
+words.every(word => {
+  let lastLetter = word[word.length - 1];
+  return lastLetter === 'g'
+});
+//result : true
