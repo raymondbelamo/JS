@@ -1,3 +1,28 @@
-function sum() {
+//The argument object
+//Contains all the arguments passed in a function
+function nums() {
   console.log(arguments);
 };
+nums(2,3,4); //logs 2,3,4
+
+
+function sum() {
+  return arguments.reduce((total, add) => total + add)
+};
+sum(2,3,4); //error
+//Since arguments is not an array and it does not have a reduce method, this does not work
+
+//Rest params collects the rest of arguments into an array
+function sum(...nums) {
+  return nums.reduce((total, add) => total + add)
+};
+sum(2,3,4); //9
+
+//Another example
+function electionResults(first, second, third, ...others) {
+  console.log(`The winner of this election is ${first}`)
+  console.log(`Coming second place is ${second}`)
+  console.log(`At third place is ${third}`)
+  console.log(`Others are ${others}`)
+};
+ electionResults('Raymond', 'David', 'Chris', 'Bryan', 'Bob', 'Amanda'); 
