@@ -1,0 +1,20 @@
+//Destructuring unpacks values from an array or properties from objects into distinct variables
+const percentages = [98, 85, 80, 77, 65, 40, 20];
+
+const highest = percentages[0];
+const secondHighest = percentages[1];
+
+//destructuring
+const [first, second, third] = percentages
+
+//Another example
+
+const electionResults = ['Raymond', 'Bryan', 'Anita', 'Bob'];
+const [first, second, third] = electionResults;
+first; //"Raymond"
+second; //"Bryan"
+third; //"Anita"
+
+const [winner, ...others] = electionResults;
+winner; //"Raymond"
+others; //["Bryan", "Anita", "Bob"]
