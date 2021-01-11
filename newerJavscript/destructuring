@@ -4,7 +4,8 @@ const percentages = [98, 85, 80, 77, 65, 40, 20];
 const highest = percentages[0];
 const secondHighest = percentages[1];
 
-//destructuring
+
+//destructuring arrays
 const [first, second, third] = percentages
 
 //Another example
@@ -18,3 +19,26 @@ third; //"Anita"
 const [winner, ...others] = electionResults;
 winner; //"Raymond"
 others; //["Bryan", "Anita", "Bob"]
+
+
+//destructuring objects
+const user = {
+  firstName: "Raymond",
+  lastName: "Belamo",
+  email: "raymondbelamo@icloud.com",
+  password: "asdfghjkl;'",
+  birthYear: 1999, 
+  gender: "Male"
+};
+
+const firstName = user.firstName;
+console.log(firstName); //Raymond
+
+//Alternatively
+const { firstName, lastName, email, password, birthyear, gender } = user;
+console.log(email); //raymondbelamo@icloud.com
+
+//Renaming a property and setting default values
+const { birthYear: born, nationality = Nigerian } = user;
+console.log(born); //1999
+console.log(nationality); //Nigerian
