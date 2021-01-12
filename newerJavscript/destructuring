@@ -42,3 +42,22 @@ console.log(email); //raymondbelamo@icloud.com
 const { birthYear: born, nationality = Nigerian } = user;
 console.log(born); //1999
 console.log(nationality); //Nigerian
+
+
+
+//Destructuring params
+//To get first and last name;
+function fullName(user) {
+  return `${user.firstName} ${user.lastName}`
+};
+
+//Using destructuring;
+function fullName(user) {
+  const { firstName, lastName } = user
+  return `${firstName} ${lastName}`
+};
+
+//Alternatively,
+function fullName({ firstName, lastName }) {
+  return `${firstName} ${lastName}`
+};
