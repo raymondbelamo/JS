@@ -58,6 +58,6 @@ function fullName(user) {
 };
 
 //Alternatively,
-function fullName({ firstName, lastName }) {
+function fullName({ firstName, lastName } = user) {
   return `${firstName} ${lastName}`
 };
